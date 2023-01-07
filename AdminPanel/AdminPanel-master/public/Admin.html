@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+  <!-- Font Awsome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="scss/style.css" />
+
+  <title>Admin Panel</title>
+</head>
+
+<body class="bg-right">
+  <div class="container-fluid mt-5">
+    <h1 class="heading">Admin Panel</h1>
+    <div class="row">
+      <div class="col-11 col-md-10 mx-auto">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb bg-common">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Admin Panel Settings
+            </li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <!-- left side navbar -->
+          <div class="col-lg-3 col-md-4 d-md-block d-none">
+            <div class="card card-left bg-common">
+              <div class="card-body">
+                <nav class="nav d-md-block">
+                  <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile">
+                    <i class="fa fa-user mr-1"></i> Movies Management
+                  </a>
+                  <a data-toggle="tab" class="nav-link" href="#account">
+                    <i class="fa fa-user-cog mr-1"></i>Delete Movies
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side div -->
+          <div class="col-lg-9 col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-1 d-md-none bg-common">
+                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile"><i
+                        class="fa fa-user mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#account"><i class="fa fa-user-cog mr-1"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- right side content -->
+              <div class="card-body tab-content border-0 bg-content">
+                <!-- profile data -->
+                <div class="tab-pane active" id="profile">
+                  <h6>YOUR PROFILE INFORMATION</h6>
+                  <hr />
+
+                  <form id="submit-form" method="POST" action="">
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Movie Name</label>
+                      <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Tony Stark" />
+                      <small class="form-text text-muted">Please enter the Full Movie Name</small>
+                    </div>
+                    <div class="mb-3">
+                      <label for="textarea" class="form-label">Movie Descrition</label>
+                      <textarea class="form-control" id="textarea" name="textarea" rows="3"
+                        placeholder="type here the movie description  "></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="link" class="form-label">Show Price</label>
+                      <input type="text" class="form-control" id="link" name="link" placeholder="14 dollars" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="location" class="form-label">Location</label>
+                      <input type="text" class="form-control" id="location" name="location"
+                        placeholder="Megarama" />
+                    </div>
+                    <div class="form-group form-text text-muted small">
+                      All of the fields on this page are optional and can be
+                      deleted at any time.
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary">
+                      Update </button>&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-secondary">
+                      Reset Changes
+                    </button>
+                  </form>
+                </div>
+                <!-- account data -->
+                <div class="tab-pane" id="account">
+                  <h6>Movies Management</h6>
+                  <hr />
+                  <form>
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Movie Name</label>
+                      <input type="text" class="form-control" id="username" placeholder="Enter Movie Name" />
+                    </div>
+                    <hr />
+                    <div class="mb-3">
+                      <label for="deleteaccount" class="form-label text-danger">Delete Account</label>
+                      <p class="text-muted">
+                        Once you delete the movie, there is no way going back.
+                        Please be certain.
+                      </p>
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-danger">
+                      Delete Movie
+                    </button>
+                  </form>
+                </div>
+
+                <!-- notify data -->
+                <div class="tab-pane" id="notify">
+                  <h6>NOTIFICATION SETTINGS</h6>
+                  <hr />
+                  <form>
+                    <div class="mb-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>

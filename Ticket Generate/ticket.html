@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="ticket.style.css">
+        <title>Ticket Generate</title>
+    </head>
+    <body>
+        <div class="ticket">
+            <img src="./logo.png" alt="Logo">
+            <p class="centered">Ticekt To Enter
+                <br>Address line 2</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="quantity">Date</th>
+                        <th class="description">movie</th>
+                        <th class="price">$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ShowTime">02/04/2023 </td>
+                        <td class="description">MindHorn</td>
+                        <td class="price">$15.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ShowTime">04/01/2023 </td>
+                        <td class="description">LALALAND</td>
+                        <td class="price">$10.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="centered">Thanks for your purchase!
+                <br>Megarama</p>
+        </div>
+        <button id="btnPrint" class="hidden-print">Print</button>
+        <script src="TicketScript.js"></script>
+    </body>
+</html>
